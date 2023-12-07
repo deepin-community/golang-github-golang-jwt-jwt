@@ -1,5 +1,59 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-golang-jwt-jwt (5.0.0+really4.5.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Add myself to uploaders.
+  * Upload to unstable. Need to revert due to API change.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Anton Gladky <gladk@debian.org>  Sat, 07 Oct 2023 20:30:59 +0200
+
+golang-github-golang-jwt-jwt (5.0.0+really4.5.0-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream version 4.5.0.
+
+ -- Anton Gladky <gladk@debian.org>  Sat, 07 Oct 2023 10:00:26 +0200
+
+golang-github-golang-jwt-jwt (5.0.0-1) unstable; urgency=medium
+
+  [ Vinay Keshava ]
+  * Team upload.
+  * New upstream version 5.0.0
+
+  [ Anton Gladky ]
+  * [f090490] Set upstream metadata fields: Security-Contact.
+  * [2922207] Update standards version to 4.6.2, no changes needed.
+
+ -- Anton Gladky <gladk@debian.org>  Fri, 06 Oct 2023 22:34:05 +0200
+
+golang-github-golang-jwt-jwt (4.4.3-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sat, 03 Dec 2022 21:22:00 +0000
+
+golang-github-golang-jwt-jwt (4.4.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump Standards-Version in d/control (no changes needed)
+
+ -- Mathias Gibbens <gibmat@debian.org>  Tue, 22 Nov 2022 01:25:19 +0000
+
+golang-github-golang-jwt-jwt (4.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * upload new upstream version
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Sun, 30 Jan 2022 23:53:53 +0100
+
+golang-github-golang-jwt-jwt (4.1.0-2) unstable; urgency=medium
+
+  * Source only upload to migration to testing
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 19 Nov 2021 13:53:53 +0530
+
+golang-github-golang-jwt-jwt (4.1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #999466)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 11 Nov 2021 18:40:25 +0530
