@@ -1,15 +1,52 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-golang-jwt-jwt
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>, Anton Gladky <gladk@debian.org>
+Section: golang
+Testsuite: autopkgtest-pkg-go
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-golang-jwt-jwt
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-golang-jwt-jwt.git
+Homepage: https://github.com/golang-jwt/jwt
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/golang-jwt/jwt
 
-Package: template-repository
+Package: golang-github-golang-jwt-jwt-dev
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: golang implementation of JSON Web Tokens (library)
+ Community maintained clone of github.com/dgrijalva/jwt-go.
+ .
+ After the original author of the library suggested migrating the
+ maintenance of jwt-go, a dedicated team of open source maintainers
+ decided to clone the existing library into this module.
+ .
+ The command line utility included in this project (cmd/jwt) provides
+ a straightforward example of token creation and parsing as well as a
+ useful tool for debugging your own integration. You'll also find several
+ implementation examples in the documentation.
+ .
+ This package provides golang module.
+
+Package: jwt
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Built-Using: ${misc:Built-Using}
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: golang implementation of JSON Web Tokens (command line)
+ Community maintained clone of github.com/dgrijalva/jwt-go.
+ .
+ After the original author of the library suggested migrating the
+ maintenance of jwt-go, a dedicated team of open source maintainers
+ decided to clone the existing library into this module.
+ .
+ The command line utility included in this project (cmd/jwt) provides
+ a straightforward example of token creation and parsing as well as a
+ useful tool for debugging your own integration. You'll also find several
+ implementation examples in the documentation.
+ .
+ This package provides the command line.
