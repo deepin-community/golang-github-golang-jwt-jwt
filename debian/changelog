@@ -1,3 +1,17 @@
+golang-github-golang-jwt-jwt (5.0.0+really4.5.0-1deepin2) unstable; urgency=medium
+
+  * Fix CVE-2025-30204: O(n) memory allocation in ParseUnverified via
+    malicious input
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 20 May 2026 22:11:03 +0800
+
+golang-github-golang-jwt-jwt (5.0.0+really4.5.0-1deepin1) unstable; urgency=medium
+
+  * Fix CVE-2024-51744: unclear error behavior in ParseWithClaims can
+    lead to accepting invalid tokens
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 20 May 2026 22:10:26 +0800
+
 golang-github-golang-jwt-jwt (5.0.0+really4.5.0-1) unstable; urgency=medium
 
   * Add myself to uploaders.
